@@ -2513,7 +2513,7 @@
 
                 <div class="contacto-form-wrapper reveal">
                     <h3>Envíenos un mensaje</h3>
-                    <form id="contactForm" action="https://formspree.io/f/REPLACE_FORMSPREE_ID" method="POST">
+                    <form id="contactForm" action="https://formsubmit.co/Cesarmireles.rdz@gmail.com" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="nombre">Nombre *</label>
@@ -2848,8 +2848,8 @@
                     });
                 } catch(e) {}
 
-                // Send to Formspree
-                fetch('https://formspree.io/f/REPLACE_FORMSPREE_ID', {
+                // Send to FormSubmit (emails go to cesar.mireles@ultradef.mx)
+                fetch('https://formsubmit.co/ajax/cesar.mireles@ultradef.mx', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                     body: JSON.stringify(formData)
