@@ -2,43 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.induagua.com/</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.induagua.com/plantas-tratamiento.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.induagua.com/blog-agua-desionizada-industria.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.induagua.com/blog-agua-desmineralizada-calderas.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.induagua.com/#servicios</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.induagua.com/#industrias</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.induagua.com/#productos</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.induagua.com/#nosotros</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.induagua.com/#contacto</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.induagua.com/#faq</loc>
-    <lastmod>2025-03-24</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
