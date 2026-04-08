@@ -1348,6 +1348,170 @@
         }
 
         /* ============================================
+           ABASTECIMIENTO — Premium dark section
+           ============================================ */
+        #abastecimiento {
+            background: var(--gradient-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #abastecimiento::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37,99,235,0.08), transparent 70%);
+            pointer-events: none;
+        }
+
+        #abastecimiento::after {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(6,182,212,0.05), transparent 70%);
+            pointer-events: none;
+        }
+
+        #abastecimiento .section-title {
+            color: var(--white);
+        }
+
+        #abastecimiento .section-desc {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .abast-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37,99,235,0.15);
+            border: 1px solid rgba(37,99,235,0.25);
+            color: var(--blue-500);
+            font-size: 0.6875rem;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 100px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .abast-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 48px;
+        }
+
+        .abast-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius-md);
+            padding: 40px 28px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .abast-card:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(37,99,235,0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .abast-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(37,99,235,0.1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: var(--transition);
+        }
+
+        .abast-card:hover .abast-icon {
+            background: var(--blue-600);
+        }
+
+        .abast-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--blue-500);
+            fill: none;
+            stroke-width: 2;
+            transition: var(--transition);
+        }
+
+        .abast-card:hover .abast-icon svg {
+            stroke: var(--white);
+        }
+
+        .abast-card h3 {
+            font-size: 1.0625rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .abast-card p {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.65;
+        }
+
+        .abast-cobertura {
+            position: relative;
+            z-index: 1;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius-md);
+            padding: 24px 36px;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .abast-cobertura-label {
+            font-size: 0.6875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--blue-500);
+            margin-bottom: 10px;
+        }
+
+        .abast-cobertura p {
+            font-size: 0.9375rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.7;
+        }
+
+        .abast-cta-center {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .abast-grid {
+                grid-template-columns: 1fr;
+            }
+            .abast-cobertura {
+                padding: 20px 20px;
+            }
+        }
+
+        /* ============================================
            FAQ — Clean accordion
            ============================================ */
         #faq {
@@ -2053,6 +2217,7 @@
                     <a href="plantas-tratamiento.html">Plantas de Tratamiento</a>
                     <a href="#industrias">Industrias</a>
                     <a href="#nosotros">Nosotros</a>
+                    <a href="#abastecimiento">Abastecimiento</a>
                     <a href="#contacto" class="btn-nav">Contacto</a>
                 </div>
 
@@ -2072,6 +2237,7 @@
             <a href="plantas-tratamiento.html" class="mobile-link">Plantas de Tratamiento</a>
             <a href="#industrias" class="mobile-link">Industrias</a>
             <a href="#nosotros" class="mobile-link">Nosotros</a>
+            <a href="#abastecimiento" class="mobile-link">Abastecimiento</a>
             <a href="#contacto" class="btn-nav-mobile mobile-link">Contacto</a>
         </div>
     </nav>
@@ -2414,6 +2580,55 @@
         </div>
     </section>
 
+    <!-- ==================== ABASTECIMIENTO EN SITIO ==================== -->
+    <section id="abastecimiento">
+        <div class="container">
+            <div class="section-header">
+                <div class="abast-badge">SERVICIO PREMIUM</div>
+                <h2 class="section-title">Su Planta Nunca Se Queda Sin Agua</h2>
+                <p class="section-desc">Servicio de abastecimiento industrial con entregas programadas directo en su planta. No m&aacute;s paros de producci&oacute;n por falta de agua especializada.</p>
+            </div>
+
+            <div class="abast-grid stagger-children">
+                <div class="abast-card reveal">
+                    <div class="abast-icon">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Entregas Programadas</h3>
+                    <p>Pipas de 10,000L, totes IBC de 1,000L o garrafones de 20L. Entregas semanales, quincenales o bajo demanda seg&uacute;n su consumo.</p>
+                </div>
+
+                <div class="abast-card reveal">
+                    <div class="abast-icon">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    </div>
+                    <h3>Calidad Certificada</h3>
+                    <p>Cada entrega incluye certificado de an&aacute;lisis. Conductividad, TDS y pH verificados antes de salir de planta.</p>
+                </div>
+
+                <div class="abast-card reveal">
+                    <div class="abast-icon">
+                        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Respuesta en 24 Horas</h3>
+                    <p>Pedido urgente? Entregamos en menos de 24 horas en toda el &aacute;rea metropolitana de Monterrey y Nuevo Le&oacute;n.</p>
+                </div>
+            </div>
+
+            <div class="abast-cobertura reveal">
+                <div class="abast-cobertura-label">Cobertura</div>
+                <p>Monterrey &bull; San Pedro &bull; San Nicol&aacute;s &bull; Guadalupe &bull; Apodaca &bull; Santa Catarina &bull; Garc&iacute;a &bull; Escobedo &bull; Ci&eacute;nega de Flores</p>
+            </div>
+
+            <div class="abast-cta-center reveal">
+                <a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20abastecimiento%20de%20agua%20industrial" class="btn-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Solicitar Abastecimiento &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== FAQ ==================== -->
     <section id="faq">
         <div class="container">
@@ -2640,6 +2855,7 @@
                         <li><a href="#servicios">Agua Desionizada</a></li>
                         <li><a href="#servicios">Agua Destilada</a></li>
                         <li><a href="plantas-tratamiento.html">Plantas de Tratamiento</a></li>
+                        <li><a href="entrega-agua-industrial.html">Entrega de Agua Industrial</a></li>
                     </ul>
                 </div>
 
