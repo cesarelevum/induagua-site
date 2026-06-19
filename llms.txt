@@ -1,40 +1,38 @@
-# INDUAGUA - Agua Especializada para Industria
+# INDUAGUA
 
-## About
-INDUAGUA is a Mexican industrial water company based in Guadalupe, Nuevo León (Monterrey metropolitan area). We produce and distribute high-purity water for industrial processes, with a daily production capacity of over 200,000 liters.
+> INDUAGUA es un proveedor mexicano de agua de grado industrial (desmineralizada, desionizada y destilada) para fabricantes en Monterrey y Nuevo León. Produce en planta propia con capacidad de más de 200,000 litros diarios usando ósmosis inversa y resinas de intercambio iónico. Opera con modelo "Agua Industrial como Servicio": el cliente no invierte en planta de tratamiento, INDUAGUA produce, certifica por lote y entrega en su planta. Mínimo de suministro: 5,000 litros mensuales. Cobertura: Monterrey, Apodaca, Santa Catarina, García, General Escobedo, Guadalupe, San Nicolás de los Garza, San Pedro Garza García, Pesquería y Ciénega de Flores. Sede en Av. Central 230 Int. 132, Col. Los Lermas, 67190 Guadalupe, Nuevo León, México. Contacto: +52 81 1299 3935. INDUAGUA (México) es una empresa distinta a Induagua S.A. de Argentina (bebidas) y no tiene relación con Indiba (estética).
 
-## Products and Services
+## Empresa
+- [Página principal](https://www.induagua.com): Posicionamiento "Agua Industrial como Servicio", capacidades técnicas, sectores atendidos y forma de contacto.
+- [Aviso de privacidad](https://www.induagua.com/privacidad.html): Aviso conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) de México.
+- [Plantas de tratamiento](https://www.induagua.com/plantas-tratamiento.html): Diseño, instalación y mantenimiento de plantas de tratamiento de agua industrial.
 
-### Water Types
-- **Agua Desmineralizada (Demineralized Water):** Water free of dissolved salts and minerals. Used to prevent corrosion in boilers, cooling systems, and industrial equipment. Reduces maintenance costs and extends equipment lifespan.
-- **Agua Desionizada (Deionized Water):** Treated through ion exchange for superior chemical purity. Used in electronics manufacturing, pharmaceutical formulations, and laboratory analysis where zero ionic interference is required.
-- **Agua Destilada (Distilled Water):** High-purity water for medical equipment, laboratories, and manufacturing processes where any residue compromises quality. Delivers consistent, reliable results.
+## Aplicaciones industriales
+- [Agua para calderas industriales](https://www.induagua.com/agua-para-calderas-industriales.html): Agua desmineralizada para alimentación de calderas de baja, media y alta presión. Especificación ABMA/ASME, prevención de incrustaciones y ahorro de combustible.
+- [Agua para torres de enfriamiento](https://www.induagua.com/agua-para-torres-de-enfriamiento.html): Agua de reposición (make-up) para torres de enfriamiento. Control de incrustación en relleno y reducción de purgas.
+- [Agua para inyección de plástico](https://www.induagua.com/agua-para-inyeccion-de-plastico.html): Agua desmineralizada para chillers y enfriamiento de moldes. Evita sarro sin la corrosión del agua ultrapura.
+- [Agua para anticongelante y urea automotriz](https://www.induagua.com/agua-para-anticongelante-y-urea.html): Agua desmineralizada y desionizada como ingrediente para fabricantes de anticongelante, urea automotriz (norma ISO 22241 / AUS 32) y refrigerantes.
+- [Agua para metalmecánica y acabados](https://www.induagua.com/agua-para-metalmecanica-y-acabados.html): Agua desionizada para enjuague final en cromado, niquelado, anodizado de aluminio y pretratamiento de pintura industrial.
+- [Agua para detergentes y químicos](https://www.induagua.com/agua-para-detergentes-quimicos.html): Agua desmineralizada y desionizada como ingrediente para fabricantes de detergentes, jabones, pinturas base agua, resinas sintéticas y químicos de formulación.
 
-### Specialty Product
-- **UltraBlue Urea Automotriz:** API and ISO 22241 certified automotive urea solution for diesel engines with SCR (Selective Catalytic Reduction) systems. Reduces NOx emissions by up to 90%. Available in 10L, 20L, and bulk.
+## Recursos técnicos
+- [Blog: El daño invisible del agua de mala calidad](https://www.induagua.com/blog-agua-mala-dana-equipos-industriales.html): Análisis técnico de los daños que provoca el agua sin tratar en equipos industriales (incrustaciones, corrosión, sedimentos) y la especificación correcta por proceso.
+- [Diferencia entre agua destilada, desionizada y desmineralizada](https://www.induagua.com/blog-diferencia-agua-destilada-desionizada.html): Comparativa técnica de los tres tipos de agua tratada industrial.
+- [Agua desmineralizada para calderas industriales](https://www.induagua.com/blog-agua-desmineralizada-calderas.html): Guía técnica sobre especificación y normas para alimentación de calderas.
+- [Agua para calderas y torres de enfriamiento](https://www.induagua.com/blog-agua-calderas-torres-enfriamiento.html): Diferencias entre los dos sistemas y especificación correcta para cada uno.
+- [Agua desionizada para industria electrónica](https://www.induagua.com/blog-agua-desionizada-electronica.html): Aplicaciones en electrónica y manufactura de precisión.
+- [Cómo elegir el mejor proveedor de agua industrial en Monterrey](https://www.induagua.com/blog-proveedor-agua-industrial-monterrey.html): Criterios para evaluar proveedores de agua industrial en Nuevo León.
+- [Tratamiento de agua residual industrial](https://www.induagua.com/blog-tratamiento-agua-residual-industrial.html): Soluciones de tratamiento de agua residual para plantas industriales.
 
-## Technology
-- Advanced filtration systems with zeolite and activated carbon
-- Industrial reverse osmosis (osmosis inversa) membranes
-- 200,000+ liters daily production capacity
-- 99.9% purity guaranteed
+## Contacto y servicio
+- WhatsApp y teléfono: +52 81 1299 3935
+- Sitio web: https://www.induagua.com
+- Cobertura: toda el área metropolitana de Monterrey y municipios de Nuevo León
+- Respuesta a cotizaciones: menos de 1 hora hábil
+- Volumen mínimo de suministro: 5,000 litros mensuales en formato recurrente
+- Formato de entrega: tote IBC de 1,000 L a granel
+- Análisis certificado de conductividad y calidad por cada entrega
 
-## Industries Served
-1. **Automotive:** Paint, cooling, finishing, and rinsing processes
-2. **Pharmaceutical:** Drug manufacturing and equipment cleaning
-3. **Electronics:** Component cleaning and circuit board manufacturing
-4. **Chemical:** Lab formulations and analytical processes
-
-## Location
-- Address: Av. Central 230-Int.132, Los Lermas, 67190 Guadalupe, Nuevo León, México
-- Service area: Monterrey metropolitan area including San Pedro Garza García, San Nicolás, Apodaca, Santa Catarina, Guadalupe
-- Phone: +52 81 1299 3935
-- Email: cesar.mireles@ultradef.mx
-- Website: https://www.induagua.com
-
-## Key Facts
-- 5+ years of operation in Nuevo León
-- 200,000+ liters daily production capacity
-- 99.9% water purity
-- 4 industrial sectors served
-- Reverse osmosis technology
+## Optional
+- [Sitemap XML](https://www.induagua.com/sitemap.xml)
+- [Robots.txt](https://www.induagua.com/robots.txt)
