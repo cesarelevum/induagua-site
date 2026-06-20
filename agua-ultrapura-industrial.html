@@ -82,8 +82,8 @@
             --ink-soft: #1F1F1F;
             --gray: #4A4A4A;
             --gray-soft: #8A8A85;
-            --red: #D4271F;
-            --red-deep: #A81F19;
+            --accent: #0A4D52;
+            --accent-deep: #06363A;
             --whatsapp: #25D366;
 
             --w-thin: 300;
@@ -164,7 +164,7 @@
             padding: 8px 16px;
             margin: -8px 0;
         }
-        .doc-bar .right a.cta:hover { background: var(--red); color: var(--paper); opacity: 1; }
+        .doc-bar .right a.cta:hover { background: var(--accent); color: var(--paper); opacity: 1; }
         @media (max-width:880px) {
             .doc-bar .right a:not(.cta), .doc-bar .ref { display: none; }
         }
@@ -191,7 +191,7 @@
             color: var(--ink);
             margin: 0 0 56px;
         }
-        .hero h1 .red { color: var(--red); }
+        .hero h1 .accent { color: var(--accent); }
         .hero h1 .lt { font-weight: var(--w-thin); font-style: italic; }
         .hero-bottom {
             display: grid; grid-template-columns: 5fr 5fr;
@@ -230,10 +230,10 @@
             transition: all .2s var(--ease);
             cursor: pointer;
         }
-        .btn:hover { background: var(--red); border-color: var(--red); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+        .btn:hover { background: var(--accent); border-color: var(--accent); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
         .btn .arrow { font-family: 'JetBrains Mono', monospace; font-weight: var(--w-bold); }
         .btn.ghost { background: var(--paper); color: var(--ink); }
-        .btn.ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 4px 4px 0 var(--red); }
+        .btn.ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 4px 4px 0 var(--accent); }
         .underlink {
             font-family: 'JetBrains Mono', monospace;
             font-size: .75rem;
@@ -245,7 +245,7 @@
             padding-bottom: 2px;
             transition: all .25s;
         }
-        .underlink:hover { color: var(--red); border-color: var(--red); }
+        .underlink:hover { color: var(--accent); border-color: var(--accent); }
 
         /* ============ SECTION HEADER ============ */
         .sec-marker {
@@ -328,7 +328,7 @@
             margin-bottom: 40px;
             max-width: 760px;
         }
-        .edit h2 .accent { color: var(--red); }
+        .edit h2 .accent { color: var(--accent); }
         .edit p {
             font-size: 1.0625rem;
             font-weight: var(--w-thin);
@@ -377,7 +377,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: .875rem;
             font-weight: var(--w-bold);
-            color: var(--red);
+            color: var(--accent);
         }
         .app-row .title {
             font-family: 'Space Grotesk', sans-serif;
@@ -462,7 +462,7 @@
             padding-bottom: 14px;
             background: var(--paper);
         }
-        .compare table th:nth-child(3) { color: var(--red); }
+        .compare table th:nth-child(3) { color: var(--accent); }
         .compare table td:first-child {
             font-family: 'JetBrains Mono', monospace;
             font-size: .8125rem;
@@ -497,7 +497,7 @@
             margin-bottom: 56px;
             max-width: 720px;
         }
-        .faq h2 .accent { color: var(--red); }
+        .faq h2 .accent { color: var(--accent); }
         .faq-list { border-top: 2px solid var(--paper); }
         .faq-q {
             border-bottom: 1px solid rgba(242,240,232,0.18);
@@ -511,7 +511,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: .875rem;
             font-weight: var(--w-bold);
-            color: var(--red);
+            color: var(--accent);
             letter-spacing: .03em;
             padding-top: 6px;
         }
@@ -561,7 +561,7 @@
             max-width: 1100px;
             position: relative;
         }
-        .cta h2 .accent { color: var(--red); }
+        .cta h2 .accent { color: var(--accent); }
         .cta h2 .lt { font-weight: var(--w-thin); font-style: italic; }
         .cta p {
             font-size: 1.125rem;
@@ -605,9 +605,9 @@
         }
         footer ul { list-style: none; display: flex; flex-direction: column; gap: 11px; }
         footer ul li a { font-size: .9375rem; color: rgba(242,240,232,0.6); font-weight: var(--w-thin); transition: color .2s; }
-        footer ul li a:hover { color: var(--red); }
+        footer ul li a:hover { color: var(--accent); }
         footer .contact p { font-size: .9375rem; color: var(--paper); line-height: 1.7; font-weight: var(--w-thin); }
-        footer .contact a { color: var(--red); }
+        footer .contact a { color: var(--accent); }
         .foot-bottom {
             display: flex; justify-content: space-between; align-items: center;
             font-family: 'JetBrains Mono', monospace;
@@ -680,7 +680,7 @@
             <span>NUEVO LEÓN · MX · 2026</span>
         </div>
         <h1 class="fadeup d1">
-            Agua <span class="red">ultrapura</span><br>
+            Agua <span class="accent">ultrapura</span><br>
             <span class="lt">para procesos donde</span><br>
             un ión define el éxito.
         </h1>
