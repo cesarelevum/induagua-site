@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--
+  System: Dieter Rams industrial — Braun / pre-2010 Apple / Vitsœ lineage
+  Type:   Helvetica Neue, system-ui · medium weight · 3 sizes max per section
+  Color:  Navy #0a1628 + Primary #1a365d + White — palette oficial InduAgua
+  Grid:   12 col · 80px gutter · hairline 1px rules between sections
+  Rhythm: Photo-led, spec tables, generous whitespace, restrained type
+-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +19,7 @@
 
     <meta property="og:title" content="Agua Ultrapura Industrial en Monterrey y Nuevo León | INDUAGUA">
     <meta property="og:description" content="Agua ultrapura producida con ósmosis inversa + resinas de intercambio iónico. Para electrónica, farmacéutica, laboratorios y formulación química crítica.">
-    <meta property="og:image" content="https://www.induagua.com/images/app-metalmecanica.jpg">
+    <meta property="og:image" content="https://www.induagua.com/images/herosection.jpg">
     <meta property="og:url" content="https://www.induagua.com/agua-ultrapura-industrial.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_MX">
@@ -21,15 +28,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agua Ultrapura Industrial | INDUAGUA Nuevo León">
     <meta name="twitter:description" content="Agua ultrapura para procesos críticos: electrónica, farmacéutica, laboratorios. RO + DI + COA por lote.">
-    <meta name="twitter:image" content="https://www.induagua.com/images/app-metalmecanica.jpg">
+    <meta name="twitter:image" content="https://www.induagua.com/images/herosection.jpg">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -76,724 +80,712 @@
         *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
         :root {
-            --paper: #F2F0E8;
-            --paper-deep: #E8E5D8;
-            --ink: #0A0A0A;
-            --ink-soft: #1F1F1F;
-            --gray: #4A4A4A;
-            --gray-soft: #8A8A85;
-            --accent: #0A4D52;
-            --accent-deep: #06363A;
+            --navy: #0a1628;
+            --primary: #1a365d;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --blue-600: #2563eb;
+            --blue-700: #1d4ed8;
             --whatsapp: #25D366;
 
-            --w-thin: 300;
-            --w-reg: 400;
-            --w-med: 500;
-            --w-bold: 700;
-
-            --rule: 2px solid var(--ink);
-            --rule-thin: 1px solid var(--ink);
-
-            --ease: cubic-bezier(0.16, 1, 0.3, 1);
-
-            --max-w: 1320px;
-            --pad: 40px;
+            --hairline: 1px solid var(--gray-200);
+            --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+            --maxw: 1240px;
         }
 
-        @media (max-width:780px) { :root { --pad: 24px; } }
-
-        html { scroll-behavior:smooth; -webkit-text-size-adjust: 100%; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
         body {
-            font-family: 'Space Grotesk', system-ui, sans-serif;
-            font-weight: var(--w-thin);
-            color: var(--ink);
-            background: var(--paper);
+            font-family: 'Helvetica Neue', Helvetica, Arial, system-ui, -apple-system, sans-serif;
+            color: var(--navy);
+            background: var(--white);
             line-height: 1.5;
             font-size: 16px;
+            font-weight: 400;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
-            position: relative;
+            text-rendering: optimizeLegibility;
         }
 
-        /* Atmospheric noise texture overlay */
-        body::before {
-            content:'';
-            position: fixed; inset: 0;
-            pointer-events: none;
-            z-index: 1;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-            opacity: 0.04;
-            mix-blend-mode: multiply;
-        }
-
-        a { color: var(--ink); text-decoration: none; }
+        a { color: var(--navy); text-decoration: none; }
         img { max-width:100%; height:auto; display:block; }
+        ::selection { background: var(--navy); color: var(--white); }
 
-        .mono { font-family: 'JetBrains Mono', monospace; }
+        .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; }
+        @media (max-width:780px) { .wrap { padding: 0 24px; } }
 
-        .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--pad); position: relative; z-index: 2; }
-
-        /* ============ TOP DOCUMENT BAR ============ */
-        .doc-bar {
-            border-bottom: var(--rule);
-            background: var(--paper);
-            padding: 14px 0;
-            position: sticky; top: 0;
-            z-index: 50;
+        /* ============ NAVBAR ============ */
+        nav.top {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: rgba(255,255,255,0.94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: var(--hairline);
+            z-index: 100;
+            padding: 18px 0;
         }
-        .doc-bar .row {
+        nav.top .row {
             display: flex; justify-content: space-between; align-items: center;
-            gap: 24px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem;
-            font-weight: var(--w-med);
-            letter-spacing: .04em;
-            text-transform: uppercase;
-            color: var(--ink);
         }
-        .doc-bar .left { display: flex; gap: 24px; align-items: center; }
-        .doc-bar .left img { height: 26px; width:auto; }
-        .doc-bar .ref { color: var(--gray); }
-        .doc-bar .right { display: flex; gap: 32px; }
-        .doc-bar .right a { color: var(--ink); transition: opacity .2s; }
-        .doc-bar .right a:hover { opacity: 0.5; }
-        .doc-bar .right a.cta {
-            background: var(--ink);
-            color: var(--paper);
-            padding: 8px 16px;
-            margin: -8px 0;
+        nav.top .brand img { height: 38px; width:auto; }
+        nav.top ul {
+            list-style:none;
+            display:flex; gap: 36px; align-items:center;
         }
-        .doc-bar .right a.cta:hover { background: var(--accent); color: var(--paper); opacity: 1; }
+        nav.top ul a {
+            font-size: .8125rem;
+            font-weight: 500;
+            color: var(--gray-700);
+            letter-spacing: .005em;
+            transition: color .2s var(--ease);
+        }
+        nav.top ul a:hover { color: var(--navy); }
+        nav.top ul a.cta {
+            background: var(--navy);
+            color: var(--white);
+            padding: 10px 20px;
+            letter-spacing: .015em;
+            transition: background .25s var(--ease);
+        }
+        nav.top ul a.cta:hover { background: var(--primary); }
         @media (max-width:880px) {
-            .doc-bar .right a:not(.cta), .doc-bar .ref { display: none; }
+            nav.top ul a:not(.cta) { display: none; }
         }
 
         /* ============ HERO ============ */
-        .hero { padding: 80px 0 0; border-bottom: var(--rule); }
-        .hero .doc-meta {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem;
+        .hero {
+            padding: 130px 0 96px;
+            border-bottom: var(--hairline);
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            gap: 72px;
+            align-items: end;
+        }
+        .hero .meta {
+            font-size: .75rem;
+            font-weight: 500;
+            letter-spacing: .12em;
             text-transform: uppercase;
-            letter-spacing: .06em;
-            color: var(--gray);
+            color: var(--gray-500);
+            margin-bottom: 28px;
+            border-bottom: var(--hairline);
+            padding-bottom: 14px;
             display: flex; justify-content: space-between;
-            border-bottom: var(--rule-thin);
-            padding-bottom: 12px;
-            margin-bottom: 48px;
         }
         .hero h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(3rem, 9vw, 8.5rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.045em;
-            line-height: 0.9;
-            color: var(--ink);
-            margin: 0 0 56px;
+            font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+            font-weight: 500;
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            color: var(--navy);
+            margin: 0 0 32px;
+            text-wrap: balance;
         }
-        .hero h1 .accent { color: var(--accent); }
-        .hero h1 .lt { font-weight: var(--w-thin); font-style: italic; }
-        .hero-bottom {
-            display: grid; grid-template-columns: 5fr 5fr;
-            gap: 64px;
-            padding: 56px 0 80px;
-            border-top: var(--rule);
+        .hero h1 .accent {
+            color: var(--primary);
+            font-weight: 700;
         }
-        .hero-bottom .col-a p {
-            font-size: 1.125rem;
-            font-weight: var(--w-thin);
-            line-height: 1.55;
-            color: var(--ink-soft);
-            max-width: 560px;
+        .hero p.lead {
+            font-size: 1.0625rem;
+            color: var(--gray-600);
+            line-height: 1.65;
+            max-width: 520px;
+            margin-bottom: 36px;
         }
-        .hero-bottom .col-b {
-            display: flex; flex-direction: column;
-            align-items: flex-start; gap: 20px;
+        .hero-actions {
+            display: flex; align-items: center; gap: 28px;
+            flex-wrap: wrap;
         }
-        @media (max-width:780px) {
-            .hero { padding: 40px 0 0; }
-            .hero-bottom { grid-template-columns: 1fr; gap: 32px; padding: 40px 0 56px; }
+        .hero-photo {
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            background: var(--gray-100);
+            position: relative;
+        }
+        .hero-photo img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s var(--ease);
+        }
+        .hero-photo:hover img { transform: scale(1.02); }
+        .hero-photo .caption {
+            position: absolute;
+            bottom: 16px; left: 20px;
+            font-size: .6875rem;
+            font-weight: 500;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--white);
+            background: rgba(10,22,40,0.78);
+            padding: 7px 12px;
+            backdrop-filter: blur(6px);
+        }
+        @media (max-width:880px) {
+            .hero { padding: 100px 0 60px; }
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-photo { aspect-ratio: 4 / 3; order: -1; }
         }
 
         /* ============ BUTTONS ============ */
         .btn {
-            display: inline-flex; align-items: center; gap: 12px;
-            background: var(--ink);
-            color: var(--paper);
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: var(--w-bold);
-            font-size: .875rem;
-            letter-spacing: .03em;
-            text-transform: uppercase;
-            padding: 18px 28px;
-            border: var(--rule);
-            transition: all .2s var(--ease);
+            display: inline-flex; align-items: center; gap: 10px;
+            background: var(--navy);
+            color: var(--white);
+            font-family: inherit;
+            font-weight: 500;
+            font-size: .9375rem;
+            letter-spacing: .005em;
+            padding: 16px 28px;
+            border: none;
             cursor: pointer;
+            transition: background .25s var(--ease), transform .25s var(--ease);
         }
-        .btn:hover { background: var(--accent); border-color: var(--accent); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
-        .btn .arrow { font-family: 'JetBrains Mono', monospace; font-weight: var(--w-bold); }
-        .btn.ghost { background: var(--paper); color: var(--ink); }
-        .btn.ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 4px 4px 0 var(--accent); }
-        .underlink {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .75rem;
-            text-transform: uppercase;
-            letter-spacing: .08em;
-            font-weight: var(--w-med);
-            color: var(--ink);
-            border-bottom: 1.5px solid var(--ink);
-            padding-bottom: 2px;
-            transition: all .25s;
-        }
-        .underlink:hover { color: var(--accent); border-color: var(--accent); }
+        .btn:hover { background: var(--primary); transform: translateY(-1px); }
+        .btn .arrow { font-weight: 400; transition: transform .25s var(--ease); }
+        .btn:hover .arrow { transform: translateX(3px); }
 
-        /* ============ SECTION HEADER ============ */
-        .sec-marker {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem;
-            font-weight: var(--w-med);
-            text-transform: uppercase;
-            letter-spacing: .06em;
-            color: var(--gray);
-            display: flex; justify-content: space-between;
-            border-bottom: var(--rule-thin);
-            padding-bottom: 12px;
-            margin-bottom: 56px;
+        .link-rule {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-size: .9375rem;
+            font-weight: 500;
+            color: var(--navy);
+            border-bottom: 1px solid var(--navy);
+            padding-bottom: 3px;
+            transition: opacity .2s, gap .25s var(--ease);
         }
+        .link-rule:hover { opacity: .55; gap: 12px; }
 
-        /* ============ STATS BAR ============ */
-        .stats {
-            border-bottom: var(--rule);
-            padding: 56px 0;
+        /* ============ SPECS BAR ============ */
+        .specs {
+            border-bottom: var(--hairline);
+            padding: 48px 0;
         }
-        .stats-grid {
+        .specs-grid {
             display: grid; grid-template-columns: repeat(4, 1fr);
-            gap: 0;
+            gap: 56px;
         }
-        .stat {
-            padding: 0 24px;
-            border-right: var(--rule-thin);
-        }
-        .stat:first-child { padding-left: 0; }
-        .stat:last-child { border-right: none; padding-right: 0; }
-        .stat-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .625rem;
-            font-weight: var(--w-med);
+        .spec-label {
+            font-size: .6875rem;
+            font-weight: 500;
+            letter-spacing: .12em;
             text-transform: uppercase;
-            letter-spacing: .08em;
-            color: var(--gray);
-            margin-bottom: 16px;
+            color: var(--gray-500);
+            margin-bottom: 14px;
         }
-        .stat-value {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2rem, 4.5vw, 3.5rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.035em;
-            line-height: 1;
-            color: var(--ink);
-            margin-bottom: 10px;
+        .spec-value {
+            font-size: clamp(1.625rem, 3vw, 2.25rem);
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
+            color: var(--navy);
+            margin-bottom: 6px;
         }
-        .stat-desc {
+        .spec-value .unit {
+            font-size: .55em;
+            font-weight: 400;
+            color: var(--gray-500);
+            margin-left: 4px;
+        }
+        .spec-desc {
             font-size: .8125rem;
-            font-weight: var(--w-thin);
-            color: var(--gray);
+            color: var(--gray-500);
             line-height: 1.45;
         }
         @media (max-width:780px) {
-            .stats { padding: 32px 0; }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 0; }
-            .stat { border-right: none; padding: 0 16px; border-bottom: var(--rule-thin); padding-bottom: 24px; }
-            .stat:nth-child(odd) { padding-left: 0; }
-            .stat:nth-child(even) { padding-right: 0; border-left: var(--rule-thin); }
-            .stat:nth-last-child(-n+2) { border-bottom: none; }
+            .specs { padding: 32px 0; }
+            .specs-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
+        }
+
+        /* ============ SECTION HEADER ============ */
+        .sec-head {
+            display: grid; grid-template-columns: 1fr 3fr;
+            gap: 40px;
+            margin-bottom: 56px;
+            padding-bottom: 24px;
+            border-bottom: var(--hairline);
+            align-items: end;
+        }
+        .sec-head .num {
+            font-size: .75rem;
+            font-weight: 500;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--gray-500);
+        }
+        .sec-head .title h2 {
+            font-size: clamp(1.625rem, 3vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            line-height: 1.1;
+            color: var(--navy);
+            max-width: 720px;
+            text-wrap: balance;
+        }
+        @media (max-width:780px) {
+            .sec-head { grid-template-columns: 1fr; gap: 16px; }
         }
 
         /* ============ EDITORIAL ============ */
-        .edit {
-            padding: 96px 0;
-            border-bottom: var(--rule);
+        .editorial {
+            padding: 112px 0;
+            border-bottom: var(--hairline);
         }
         .edit-grid {
-            display: grid; grid-template-columns: 4fr 8fr;
+            display: grid; grid-template-columns: 7fr 5fr;
             gap: 80px;
+            align-items: start;
         }
-        .edit h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.75rem, 4vw, 3.25rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.035em;
-            line-height: 1.02;
-            color: var(--ink);
-            margin-bottom: 40px;
-            max-width: 760px;
-        }
-        .edit h2 .accent { color: var(--accent); }
-        .edit p {
+        .edit-grid .body p {
             font-size: 1.0625rem;
-            font-weight: var(--w-thin);
-            line-height: 1.65;
-            color: var(--ink-soft);
-            margin-bottom: 22px;
-            max-width: 680px;
+            line-height: 1.7;
+            color: var(--gray-700);
+            margin-bottom: 20px;
+            max-width: 620px;
         }
-        .edit p strong { font-weight: var(--w-bold); color: var(--ink); }
-        @media (max-width:980px) {
-            .edit { padding: 64px 0; }
-            .edit-grid { grid-template-columns: 1fr; gap: 32px; }
+        .edit-grid .body p strong {
+            color: var(--navy);
+            font-weight: 500;
+        }
+        .edit-grid .body p:last-child { margin-bottom: 0; }
+        .edit-photo {
+            position: sticky; top: 100px;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            background: var(--gray-100);
+        }
+        .edit-photo img { width:100%; height:100%; object-fit: cover; }
+        .edit-caption {
+            margin-top: 12px;
+            font-size: .75rem;
+            color: var(--gray-500);
+            line-height: 1.5;
+        }
+        @media (max-width:880px) {
+            .editorial { padding: 72px 0; }
+            .edit-grid { grid-template-columns: 1fr; gap: 36px; }
+            .edit-photo { position: static; aspect-ratio: 4 / 3; }
         }
 
-        /* ============ APPS TABLE ============ */
+        /* ============ APPLICATIONS ============ */
         .apps {
-            padding: 96px 0;
-            border-bottom: var(--rule);
-            background: var(--paper-deep);
+            padding: 112px 0;
+            border-bottom: var(--hairline);
+            background: var(--gray-50);
         }
-        .apps-head h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.75rem, 4vw, 3.25rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.035em;
-            line-height: 1.02;
-            color: var(--ink);
-            max-width: 760px;
-            margin-bottom: 48px;
+        .apps-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
         }
-        .apps-table {
-            border-top: var(--rule);
+        .app {
+            background: var(--white);
+            border: var(--hairline);
+            transition: border-color .25s var(--ease);
         }
-        .app-row {
-            display: grid;
-            grid-template-columns: 80px 5fr 7fr 120px;
-            gap: 32px;
-            padding: 28px 0;
-            border-bottom: var(--rule-thin);
-            align-items: center;
-            transition: background .2s, padding .3s var(--ease);
-            position: relative;
+        .app:hover { border-color: var(--gray-400); }
+        .app .img-wrap {
+            aspect-ratio: 16 / 11;
+            overflow: hidden;
+            background: var(--gray-100);
         }
-        .app-row:hover { background: var(--paper); padding-left: 16px; padding-right: 16px; }
-        .app-row .num {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .875rem;
-            font-weight: var(--w-bold);
-            color: var(--accent);
+        .app .img-wrap img {
+            width:100%; height:100%; object-fit: cover;
+            transition: transform .8s var(--ease);
         }
-        .app-row .title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.125rem, 1.6vw, 1.5rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.022em;
-            color: var(--ink);
-            line-height: 1.15;
+        .app:hover .img-wrap img { transform: scale(1.04); }
+        .app .meta {
+            padding: 24px 26px 26px;
         }
-        .app-row .desc {
-            font-size: .9375rem;
-            font-weight: var(--w-thin);
-            color: var(--gray);
-            line-height: 1.55;
-            max-width: 500px;
-        }
-        .app-row .tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .625rem;
-            font-weight: var(--w-med);
+        .app .num-label {
+            display: flex; justify-content: space-between;
+            font-size: .6875rem;
+            font-weight: 500;
+            letter-spacing: .1em;
             text-transform: uppercase;
-            letter-spacing: .08em;
-            color: var(--ink);
-            text-align: right;
-            padding: 6px 10px;
-            border: 1.5px solid var(--ink);
-            display: inline-block;
-            justify-self: end;
+            color: var(--gray-500);
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: var(--hairline);
         }
-        @media (max-width:780px) {
-            .apps { padding: 56px 0; }
-            .app-row { grid-template-columns: 40px 1fr; gap: 12px; padding: 22px 0; }
-            .app-row .desc, .app-row .tag { grid-column: 2; padding-top: 8px; }
-            .app-row .tag { justify-self: start; }
+        .app h3 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: -0.012em;
+            color: var(--navy);
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+        .app p {
+            font-size: .9375rem;
+            color: var(--gray-600);
+            line-height: 1.55;
+        }
+        @media (max-width:980px) {
+            .apps { padding: 72px 0; }
+            .apps-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        }
+        @media (max-width:600px) {
+            .apps-grid { grid-template-columns: 1fr; }
         }
 
-        /* ============ COMPARE ============ */
+        /* ============ COMPARE TABLE ============ */
         .compare {
-            padding: 96px 0;
-            border-bottom: var(--rule);
+            padding: 112px 0;
+            border-bottom: var(--hairline);
         }
-        .compare h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.75rem, 4vw, 3.25rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.035em;
-            line-height: 1.02;
-            color: var(--ink);
-            margin: 18px 0 16px;
-            max-width: 720px;
-        }
-        .compare p.intro {
+        .compare .intro p {
             font-size: 1.0625rem;
-            font-weight: var(--w-thin);
-            color: var(--ink-soft);
+            color: var(--gray-600);
+            line-height: 1.65;
             max-width: 640px;
             margin-bottom: 48px;
-            line-height: 1.6;
         }
-        .compare table {
+        table.spec-table {
             width: 100%;
             border-collapse: collapse;
-            border-top: var(--rule);
-            border-bottom: var(--rule);
+            border-top: 1px solid var(--navy);
+            border-bottom: 1px solid var(--navy);
         }
-        .compare table tr { border-bottom: var(--rule-thin); }
-        .compare table tr:last-child { border-bottom: none; }
-        .compare table th, .compare table td {
+        table.spec-table tr { border-bottom: var(--hairline); }
+        table.spec-table tr:last-child { border-bottom: none; }
+        table.spec-table th, table.spec-table td {
             text-align: left;
-            padding: 20px 16px;
+            padding: 22px 20px;
             vertical-align: top;
             font-size: .9375rem;
-            font-weight: var(--w-thin);
+            line-height: 1.55;
         }
-        .compare table th {
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: var(--w-bold);
-            color: var(--ink);
+        table.spec-table th {
+            font-weight: 500;
+            color: var(--gray-500);
             font-size: .6875rem;
-            letter-spacing: .08em;
+            letter-spacing: .12em;
             text-transform: uppercase;
             padding-bottom: 14px;
-            background: var(--paper);
         }
-        .compare table th:nth-child(3) { color: var(--accent); }
-        .compare table td:first-child {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .8125rem;
-            font-weight: var(--w-med);
-            color: var(--gray);
+        table.spec-table th:nth-child(3) { color: var(--primary); }
+        table.spec-table td:first-child {
+            font-size: .6875rem;
+            font-weight: 500;
+            letter-spacing: .08em;
             text-transform: uppercase;
-            letter-spacing: .05em;
-            width: 25%;
+            color: var(--gray-500);
+            width: 22%;
+            padding-top: 24px;
         }
-        .compare table td:nth-child(2) { color: var(--ink-soft); width: 35%; }
-        .compare table td:nth-child(3) { color: var(--ink); font-weight: var(--w-med); width: 40%; background: var(--paper-deep); }
+        table.spec-table td:nth-child(2) { color: var(--gray-700); width: 36%; }
+        table.spec-table td:nth-child(3) { color: var(--navy); font-weight: 500; width: 42%; }
         @media (max-width:780px) {
-            .compare { padding: 56px 0; }
-            .compare table th, .compare table td { padding: 12px 8px; font-size: .8125rem; }
+            .compare { padding: 72px 0; }
+            table.spec-table th, table.spec-table td { padding: 14px 10px; font-size: .8125rem; }
         }
 
         /* ============ FAQ ============ */
         .faq {
-            background: var(--ink);
-            color: var(--paper);
-            padding: 96px 0;
-            border-bottom: var(--rule);
+            padding: 112px 0;
+            border-bottom: var(--hairline);
+            background: var(--navy);
+            color: var(--white);
         }
-        .faq .sec-marker { color: var(--paper); border-color: rgba(242,240,232,0.2); }
-        .faq h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.75rem, 4vw, 3.25rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.035em;
-            line-height: 1.02;
-            color: var(--paper);
-            margin-bottom: 56px;
-            max-width: 720px;
+        .faq .sec-head { border-color: rgba(255,255,255,0.15); }
+        .faq .sec-head .num { color: rgba(255,255,255,0.5); }
+        .faq .sec-head .title h2 { color: var(--white); }
+        .faq-list {
+            border-top: 1px solid rgba(255,255,255,0.25);
         }
-        .faq h2 .accent { color: var(--accent); }
-        .faq-list { border-top: 2px solid var(--paper); }
         .faq-q {
-            border-bottom: 1px solid rgba(242,240,232,0.18);
-            padding: 32px 0;
-            display: grid;
-            grid-template-columns: 60px 1fr;
-            gap: 24px;
+            display: grid; grid-template-columns: 1fr 3fr;
+            gap: 40px;
+            padding: 36px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
             align-items: start;
         }
-        .faq-q .n {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .875rem;
-            font-weight: var(--w-bold);
-            color: var(--accent);
-            letter-spacing: .03em;
-            padding-top: 6px;
+        .faq-q .num {
+            font-size: .75rem;
+            font-weight: 500;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.45);
+            padding-top: 5px;
         }
         .faq-q h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(1.125rem, 1.8vw, 1.5rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.022em;
-            color: var(--paper);
-            line-height: 1.22;
-            margin-bottom: 16px;
+            font-size: clamp(1.0625rem, 1.6vw, 1.375rem);
+            font-weight: 500;
+            letter-spacing: -0.012em;
+            color: var(--white);
+            line-height: 1.3;
+            margin-bottom: 14px;
         }
         .faq-q p {
-            color: rgba(242,240,232,0.7);
             font-size: 1rem;
-            font-weight: var(--w-thin);
+            color: rgba(255,255,255,0.7);
             line-height: 1.7;
-            max-width: 800px;
+            max-width: 760px;
         }
-        @media (max-width:780px) { .faq { padding: 56px 0; } }
+        @media (max-width:780px) {
+            .faq { padding: 72px 0; }
+            .faq-q { grid-template-columns: 1fr; gap: 12px; padding: 26px 0; }
+        }
 
         /* ============ CTA ============ */
         .cta {
             padding: 120px 0;
-            border-bottom: var(--rule);
+            border-bottom: var(--hairline);
             text-align: center;
-            position: relative;
-        }
-        .cta::before {
-            content: '';
-            position: absolute; inset: 0;
-            background:
-                linear-gradient(var(--ink) 1px, transparent 1px),
-                linear-gradient(90deg, var(--ink) 1px, transparent 1px);
-            background-size: 56px 56px;
-            opacity: 0.025;
-            pointer-events: none;
         }
         .cta h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(2.25rem, 6.5vw, 6rem);
-            font-weight: var(--w-bold);
-            letter-spacing: -0.045em;
-            line-height: 0.95;
-            color: var(--ink);
-            margin: 0 auto 32px;
-            max-width: 1100px;
-            position: relative;
+            font-size: clamp(2rem, 4.5vw, 3.5rem);
+            font-weight: 500;
+            letter-spacing: -0.028em;
+            line-height: 1.06;
+            color: var(--navy);
+            max-width: 920px;
+            margin: 0 auto 24px;
+            text-wrap: balance;
         }
-        .cta h2 .accent { color: var(--accent); }
-        .cta h2 .lt { font-weight: var(--w-thin); font-style: italic; }
+        .cta h2 .accent {
+            color: var(--primary);
+            font-weight: 700;
+        }
         .cta p {
-            font-size: 1.125rem;
-            font-weight: var(--w-thin);
-            color: var(--ink-soft);
-            max-width: 620px;
-            margin: 0 auto 48px;
-            line-height: 1.55;
-            position: relative;
+            font-size: 1.0625rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
         }
-        .cta-actions {
-            display: inline-flex; gap: 28px; align-items: center;
-            position: relative;
-        }
+        .cta-actions { display: inline-flex; gap: 28px; align-items: center; }
         @media (max-width:600px) {
-            .cta { padding: 64px 0; }
+            .cta { padding: 72px 0; }
             .cta-actions { flex-direction: column; gap: 22px; }
         }
 
         /* ============ FOOTER ============ */
         footer {
-            background: var(--ink);
-            color: var(--paper);
-            padding: 56px 0 24px;
+            background: var(--white);
+            padding: 64px 0 28px;
         }
         .foot-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
-            gap: 48px;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 56px;
             padding-bottom: 48px;
-            border-bottom: 1px solid rgba(242,240,232,0.18);
             margin-bottom: 24px;
+            border-bottom: var(--hairline);
         }
-        footer .brand img { height: 36px; width:auto; filter: invert(1) brightness(2); margin-bottom: 18px; }
-        footer .brand p { font-size: .875rem; color: rgba(242,240,232,0.55); max-width: 280px; line-height: 1.55; font-weight: var(--w-thin); }
+        footer .brand img { height: 38px; width:auto; margin-bottom: 18px; }
+        footer .brand p {
+            font-size: .9375rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+            max-width: 280px;
+        }
         footer h4 {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem; font-weight: var(--w-bold);
-            letter-spacing: .12em; text-transform: uppercase;
-            color: rgba(242,240,232,0.85); margin-bottom: 20px;
+            font-size: .6875rem;
+            font-weight: 500;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--gray-500);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: var(--hairline);
         }
-        footer ul { list-style: none; display: flex; flex-direction: column; gap: 11px; }
-        footer ul li a { font-size: .9375rem; color: rgba(242,240,232,0.6); font-weight: var(--w-thin); transition: color .2s; }
-        footer ul li a:hover { color: var(--accent); }
-        footer .contact p { font-size: .9375rem; color: var(--paper); line-height: 1.7; font-weight: var(--w-thin); }
-        footer .contact a { color: var(--accent); }
+        footer ul { list-style:none; display:flex; flex-direction: column; gap: 12px; }
+        footer ul li a {
+            font-size: .9375rem;
+            color: var(--gray-700);
+            transition: color .2s;
+        }
+        footer ul li a:hover { color: var(--navy); }
+        footer .contact p {
+            font-size: .9375rem;
+            color: var(--gray-700);
+            line-height: 1.7;
+        }
+        footer .contact a { color: var(--primary); }
         .foot-bottom {
             display: flex; justify-content: space-between; align-items: center;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: .6875rem;
-            letter-spacing: .06em;
-            text-transform: uppercase;
-            color: rgba(242,240,232,0.45);
+            font-size: .8125rem;
+            color: var(--gray-500);
         }
         @media (max-width:780px) {
-            .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-            .foot-bottom { flex-direction: column; gap: 12px; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+            .foot-bottom { flex-direction: column; gap: 12px; text-align: center; }
         }
 
         /* ============ WHATSAPP FLOAT ============ */
-        .wa-float {
-            position: fixed; bottom: 24px; right: 24px;
+        .wa {
+            position: fixed; bottom: 28px; right: 28px;
             width: 56px; height: 56px;
             background: var(--whatsapp);
-            border: var(--rule);
+            border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            z-index: 99;
+            box-shadow: 0 6px 22px rgba(0,0,0,0.18);
+            z-index: 90;
             transition: transform .2s var(--ease);
         }
-        .wa-float:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
-        .wa-float svg { width: 26px; height: 26px; fill: var(--ink); }
+        .wa:hover { transform: scale(1.05); }
+        .wa svg { width: 28px; height: 28px; fill: white; }
 
         /* ============ REVEAL ============ */
-        .fadeup { opacity: 0; transform: translateY(24px); animation: fadeup .9s var(--ease) forwards; }
-        .d1 { animation-delay: .08s; }
-        .d2 { animation-delay: .18s; }
-        .d3 { animation-delay: .28s; }
-        .d4 { animation-delay: .38s; }
-        .d5 { animation-delay: .48s; }
-        @keyframes fadeup { to { opacity: 1; transform: translateY(0); } }
-
-        .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity .85s var(--ease), transform .85s var(--ease);
+        }
         .reveal.in { opacity: 1; transform: translateY(0); }
-
         @media (prefers-reduced-motion: reduce) {
-            .fadeup, .reveal { animation: none; opacity:1; transform:none; transition: none; }
+            .reveal { opacity:1; transform: none; transition: none; }
         }
     </style>
 </head>
 <body>
 
-<!-- DOC BAR -->
-<header class="doc-bar">
-    <div class="wrap">
-        <div class="row">
-            <div class="left">
-                <a href="/"><img src="/images/logo.png" alt="INDUAGUA"></a>
-                <span class="ref">DOC · 02 · APLICACIÓN — AGUA ULTRAPURA — REV. 06.26</span>
-            </div>
-            <div class="right">
-                <a href="/">Inicio</a>
-                <a href="/#productos">Aplicaciones</a>
-                <a href="/plantas-tratamiento.html">Plantas</a>
-                <a href="/#blog">Recursos</a>
-                <a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20cotizar%20agua%20ultrapura" class="cta" target="_blank" rel="noopener">Cotizar →</a>
-            </div>
-        </div>
+<!-- NAVBAR -->
+<nav class="top">
+    <div class="wrap row">
+        <a href="/" class="brand">
+            <img src="/images/logo.png" alt="INDUAGUA — Tecnología e Ingeniería del Agua">
+        </a>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/#productos">Aplicaciones</a></li>
+            <li><a href="/plantas-tratamiento.html">Plantas</a></li>
+            <li><a href="/#blog">Recursos</a></li>
+            <li><a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20cotizar%20agua%20ultrapura" class="cta" target="_blank" rel="noopener">Cotizar</a></li>
+        </ul>
     </div>
-</header>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
     <div class="wrap">
-        <div class="doc-meta fadeup">
-            <span>02 / APLICACIÓN INDUSTRIAL</span>
-            <span>NUEVO LEÓN · MX · 2026</span>
-        </div>
-        <h1 class="fadeup d1">
-            Agua <span class="accent">ultrapura</span><br>
-            <span class="lt">para procesos donde</span><br>
-            un ión define el éxito.
-        </h1>
-        <div class="hero-bottom">
-            <div class="col-a fadeup d2">
-                <p>Ósmosis inversa con resinas de intercambio iónico. Análisis certificado lote a lote (COA). Sin intermediarios. Para electrónica, farmacéutica, laboratorios, formulación química crítica, cosmética avanzada y anodizado de precisión.</p>
+        <div class="hero-grid">
+            <div class="reveal">
+                <div class="meta">
+                    <span>Aplicación industrial</span>
+                    <span>Nuevo León · 2026</span>
+                </div>
+                <h1>Agua <span class="accent">ultrapura</span> para procesos donde un ión define el éxito.</h1>
+                <p class="lead">Ósmosis inversa con resinas de intercambio iónico. Análisis certificado lote a lote (COA), entregado en tu planta. Sin intermediarios.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20cotizar%20agua%20ultrapura%20industrial" target="_blank" rel="noopener" class="btn">
+                        Solicitar cotización
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="#aplicaciones" class="link-rule">Ver aplicaciones <span class="arrow">↓</span></a>
+                </div>
             </div>
-            <div class="col-b fadeup d3">
-                <a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20cotizar%20agua%20ultrapura%20industrial" target="_blank" rel="noopener" class="btn">
-                    Cotizar suministro
-                    <span class="arrow">→</span>
-                </a>
-                <a href="#aplicaciones" class="underlink">Ver aplicaciones por industria ↓</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- STATS -->
-<section class="stats">
-    <div class="wrap">
-        <div class="stats-grid">
-            <div class="stat reveal">
-                <div class="stat-label">[01] Capacidad</div>
-                <div class="stat-value mono">200,000<span style="font-size:.5em; color:var(--gray); margin-left:6px;">L/día</span></div>
-                <div class="stat-desc">Producción propia diaria</div>
-            </div>
-            <div class="stat reveal">
-                <div class="stat-label">[02] Mínimo</div>
-                <div class="stat-value mono">5,000<span style="font-size:.5em; color:var(--gray); margin-left:6px;">L/mes</span></div>
-                <div class="stat-desc">Volumen recurrente desde</div>
-            </div>
-            <div class="stat reveal">
-                <div class="stat-label">[03] Respuesta</div>
-                <div class="stat-value mono">&lt; 1h</div>
-                <div class="stat-desc">Cotización en hábil</div>
-            </div>
-            <div class="stat reveal">
-                <div class="stat-label">[04] Cobertura</div>
-                <div class="stat-value mono">10</div>
-                <div class="stat-desc">Ciudades de Nuevo León</div>
+            <div class="hero-photo reveal">
+                <img src="/images/herosection.jpg" alt="Planta de tratamiento de agua INDUAGUA — sistema de ósmosis inversa industrial en Nuevo León" loading="eager">
+                <span class="caption">Planta de tratamiento INDUAGUA · NL</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- EDITORIAL — Qué es -->
-<section class="edit">
+<!-- SPECS BAR -->
+<section class="specs">
     <div class="wrap">
-        <div class="sec-marker reveal">
-            <span>03 / DEFINICIÓN TÉCNICA</span>
-            <span>¿QUÉ ES EL AGUA ULTRAPURA?</span>
+        <div class="specs-grid">
+            <div class="reveal">
+                <div class="spec-label">Capacidad diaria</div>
+                <div class="spec-value">200,000<span class="unit">L</span></div>
+                <div class="spec-desc">Producción propia. Sin subcontratación.</div>
+            </div>
+            <div class="reveal">
+                <div class="spec-label">Volumen mínimo</div>
+                <div class="spec-value">5,000<span class="unit">L/mes</span></div>
+                <div class="spec-desc">Suministro recurrente desde.</div>
+            </div>
+            <div class="reveal">
+                <div class="spec-label">Respuesta</div>
+                <div class="spec-value">&lt; 1<span class="unit">h hábil</span></div>
+                <div class="spec-desc">Cotización técnica + comercial.</div>
+            </div>
+            <div class="reveal">
+                <div class="spec-label">Cobertura</div>
+                <div class="spec-value">10<span class="unit">ciudades</span></div>
+                <div class="spec-desc">Área metropolitana de Monterrey.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="editorial">
+    <div class="wrap">
+        <div class="sec-head reveal">
+            <div class="num">01 — Definición técnica</div>
+            <div class="title">
+                <h2>El nivel más alto de pureza, producido para procesos donde nada residual es aceptable.</h2>
+            </div>
         </div>
         <div class="edit-grid">
-            <div class="reveal"></div>
-            <div class="reveal">
-                <h2>El nivel más alto de pureza. Producido para procesos donde nada residual <span class="accent">es aceptable</span>.</h2>
+            <div class="body reveal">
                 <p>El agua ultrapura se elabora combinando <strong>ósmosis inversa (RO)</strong> con <strong>resinas de intercambio iónico (DI)</strong>, eliminando iones, partículas, materia orgánica y bacterias hasta el límite de detección. Se especifica por su <strong>conductividad eléctrica</strong> — a menor conductividad, mayor pureza.</p>
                 <p>A diferencia del agua desmineralizada (sólo RO) o desionizada (RO + resinas estándar), la ultrapura se produce con resinas de alta capacidad y control estricto de calidad por lote. Es el grado de agua que necesitas cuando cualquier ión residual, partícula o trazo orgánico puede causar una falla.</p>
-                <p>En <strong>INDUAGUA</strong> producimos ultrapura en planta propia, no subcontratada, y la entregamos a fabricantes industriales de Monterrey y Nuevo León en suministro recurrente o bajo maquila a la spec específica que tu proceso requiere.</p>
+                <p>En <strong>INDUAGUA</strong> producimos ultrapura en planta propia — no subcontratada — y la entregamos a fabricantes industriales de Monterrey y Nuevo León en suministro recurrente o bajo maquila a la spec específica que tu proceso requiere.</p>
+            </div>
+            <div class="reveal">
+                <div class="edit-photo">
+                    <img src="/images/osmosis-grande.jpg" alt="Planta de tratamiento INDUAGUA — suavizadores fiberglass + tanques + sistema de presión OTAPress" loading="lazy">
+                </div>
+                <div class="edit-caption">Suavizadores y sistema de presión — planta INDUAGUA, Guadalupe, Nuevo León.</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- APPS -->
+<!-- APPLICATIONS -->
 <section class="apps" id="aplicaciones">
     <div class="wrap">
-        <div class="sec-marker reveal">
-            <span>04 / APLICACIONES</span>
-            <span>06 INDUSTRIAS / 06 PROCESOS</span>
+        <div class="sec-head reveal">
+            <div class="num">02 — Aplicaciones</div>
+            <div class="title">
+                <h2>Industrias donde el agua es el ingrediente crítico.</h2>
+            </div>
         </div>
-        <div class="apps-head reveal">
-            <h2>Industrias donde el agua es el ingrediente crítico.</h2>
-        </div>
-
-        <div class="apps-table">
-            <div class="app-row reveal">
-                <div class="num mono">[01]</div>
-                <div class="title">Electrónica y semiconductores</div>
-                <div class="desc">Limpieza de tarjetas, componentes y enjuagues finales donde residuos iónicos comprometen el funcionamiento.</div>
-                <div class="tag mono">Críticidad alta</div>
-            </div>
-            <div class="app-row reveal">
-                <div class="num mono">[02]</div>
-                <div class="title">Industria farmacéutica</div>
-                <div class="desc">Preparación de soluciones, lavado de equipo y formulación de productos donde la pureza del agua es regulatoria.</div>
-                <div class="tag mono">Regulada</div>
-            </div>
-            <div class="app-row reveal">
-                <div class="num mono">[03]</div>
-                <div class="title">Laboratorios analíticos</div>
-                <div class="desc">HPLC, espectroscopía, soluciones reactivas y calibración donde la conductividad de entrada debe ser mínima.</div>
-                <div class="tag mono">Analítica</div>
-            </div>
-            <div class="app-row reveal">
-                <div class="num mono">[04]</div>
-                <div class="title">Formulación química crítica</div>
-                <div class="desc">Químicos finos, reactivos y soluciones especializadas donde un ión residual cambia las propiedades del producto.</div>
-                <div class="tag mono">Spec a medida</div>
-            </div>
-            <div class="app-row reveal">
-                <div class="num mono">[05]</div>
-                <div class="title">Cosmética avanzada</div>
-                <div class="desc">Cremas, sueros y productos premium donde la calidad del agua define la del producto final.</div>
-                <div class="tag mono">Premium</div>
-            </div>
-            <div class="app-row reveal">
-                <div class="num mono">[06]</div>
-                <div class="title">Anodizado de precisión</div>
-                <div class="desc">Enjuague final en acabados ópticos, médicos o de alta tolerancia donde residuos minerales generan defectos.</div>
-                <div class="tag mono">Acabados</div>
-            </div>
+        <div class="apps-grid">
+            <article class="app reveal">
+                <div class="img-wrap">
+                    <img src="/images/app-detergentes.jpg" alt="Formulación química industrial — fabricantes de detergentes y químicos finos" loading="lazy">
+                </div>
+                <div class="meta">
+                    <div class="num-label"><span>01 / Crítica regulada</span><span>Farma · Lab</span></div>
+                    <h3>Industria farmacéutica y laboratorios analíticos</h3>
+                    <p>Preparación de soluciones, HPLC, espectroscopía, lavado de equipo y formulación donde la pureza del agua es regulatoria.</p>
+                </div>
+            </article>
+            <article class="app reveal">
+                <div class="img-wrap">
+                    <img src="/images/app-metalmecanica.jpg" alt="Acabados metalmecánicos — anodizado, cromado, niquelado de precisión" loading="lazy">
+                </div>
+                <div class="meta">
+                    <div class="num-label"><span>02 / Acabados</span><span>Metalmecánica</span></div>
+                    <h3>Electrónica, semiconductores y anodizado de precisión</h3>
+                    <p>Limpieza de tarjetas, componentes y enjuagues finales donde residuos iónicos comprometen el funcionamiento del producto.</p>
+                </div>
+            </article>
+            <article class="app reveal">
+                <div class="img-wrap">
+                    <img src="/images/app-inyeccion.jpg" alt="Fabricación química — cosmética avanzada y formulación química crítica" loading="lazy">
+                </div>
+                <div class="meta">
+                    <div class="num-label"><span>03 / A la medida</span><span>Química fina</span></div>
+                    <h3>Formulación química crítica y cosmética avanzada</h3>
+                    <p>Químicos finos, reactivos, cremas, sueros y productos premium donde un ión residual cambia las propiedades del producto.</p>
+                </div>
+            </article>
         </div>
     </div>
 </section>
@@ -801,14 +793,16 @@
 <!-- COMPARE -->
 <section class="compare">
     <div class="wrap">
-        <div class="sec-marker reveal">
-            <span>05 / DIFERENCIAS TÉCNICAS</span>
-            <span>DESMINERALIZADA / DESIONIZADA / ULTRAPURA</span>
+        <div class="sec-head reveal">
+            <div class="num">03 — Diferencias técnicas</div>
+            <div class="title">
+                <h2>Tres grados de pureza. Un solo proveedor.</h2>
+            </div>
         </div>
-        <h2 class="reveal">Tres grados de pureza. Un solo proveedor.</h2>
-        <p class="intro reveal">Producimos las tres variantes en la misma planta. Si no estás seguro cuál spec necesita tu proceso, analizamos tu agua actual y te recomendamos la correcta.</p>
-
-        <table class="reveal">
+        <div class="intro reveal">
+            <p>Producimos las tres variantes principales en la misma planta. Si no estás seguro cuál spec necesita tu proceso, analizamos tu agua actual y te recomendamos la correcta.</p>
+        </div>
+        <table class="spec-table reveal">
             <thead>
                 <tr>
                     <th></th>
@@ -820,7 +814,7 @@
                 <tr>
                     <td>Tecnología</td>
                     <td>Ósmosis inversa (RO)</td>
-                    <td>RO + resinas de intercambio iónico</td>
+                    <td>RO + resinas de intercambio iónico (DI)</td>
                 </tr>
                 <tr>
                     <td>Conductividad</td>
@@ -834,8 +828,8 @@
                 </tr>
                 <tr>
                     <td>COA por lote</td>
-                    <td>Sí</td>
-                    <td>Sí + validación adicional de conductividad</td>
+                    <td>Incluido</td>
+                    <td>Incluido + validación adicional de conductividad</td>
                 </tr>
                 <tr>
                     <td>Cuándo elegirla</td>
@@ -850,43 +844,44 @@
 <!-- FAQ -->
 <section class="faq">
     <div class="wrap">
-        <div class="sec-marker reveal">
-            <span>06 / PREGUNTAS FRECUENTES</span>
-            <span>05 ENTRADAS</span>
+        <div class="sec-head reveal">
+            <div class="num">04 — Preguntas frecuentes</div>
+            <div class="title">
+                <h2>Lo que el Director de Compras pregunta antes de firmar.</h2>
+            </div>
         </div>
-        <h2 class="reveal">Lo que el Director de Compras <span class="accent">pregunta</span> antes de firmar.</h2>
 
         <div class="faq-list">
             <div class="faq-q reveal">
-                <div class="n">[01]</div>
+                <div class="num">01</div>
                 <div>
                     <h3>¿Qué es el agua ultrapura industrial?</h3>
                     <p>Agua tratada con el menor contenido posible de iones, partículas, materia orgánica y bacterias. Se produce combinando ósmosis inversa (RO) con resinas de intercambio iónico (DI) y se especifica por su conductividad eléctrica. Se usa cuando el agua entra en contacto directo con procesos críticos donde un ión residual puede causar fallas.</p>
                 </div>
             </div>
             <div class="faq-q reveal">
-                <div class="n">[02]</div>
+                <div class="num">02</div>
                 <div>
                     <h3>¿En qué se diferencia de la desmineralizada y desionizada?</h3>
                     <p>Desmineralizada = sólo ósmosis inversa. Desionizada = RO + resinas estándar. Ultrapura = RO + resinas de alta capacidad con control estricto de calidad por lote para procesos donde cualquier ión residual puede causar fallas. INDUAGUA produce las tres variantes y te ayudamos a elegir la spec correcta.</p>
                 </div>
             </div>
             <div class="faq-q reveal">
-                <div class="n">[03]</div>
+                <div class="num">03</div>
                 <div>
                     <h3>¿Qué industrias la necesitan?</h3>
                     <p>Manufactura de electrónica, laboratorios analíticos (HPLC, espectroscopía), industria farmacéutica, formulación de químicos finos, cosmética avanzada, anodizado de precisión, manufactura de semiconductores y procesos donde el ión residual o materia orgánica afecta el resultado final.</p>
                 </div>
             </div>
             <div class="faq-q reveal">
-                <div class="n">[04]</div>
+                <div class="num">04</div>
                 <div>
                     <h3>¿Atienden desde 5,000 litros mensuales?</h3>
                     <p>Sí. Nuestro modelo de suministro recurrente atiende plantas industriales en Monterrey y Nuevo León desde 5,000 L/mes, en formato tote IBC a granel con análisis certificado por cada entrega.</p>
                 </div>
             </div>
             <div class="faq-q reveal">
-                <div class="n">[05]</div>
+                <div class="num">05</div>
                 <div>
                     <h3>¿Pueden maquilar agua a una conductividad específica?</h3>
                     <p>Sí. Operamos en dos modelos: suministro directo de nuestras variantes estándar, o maquila de agua a la spec exacta que tu producto requiere bajo contrato recurrente. Analizamos tu necesidad técnica y producimos agua con conductividad consistente lote a lote.</p>
@@ -899,14 +894,14 @@
 <!-- CTA -->
 <section class="cta">
     <div class="wrap">
-        <h2 class="reveal">Analizamos tu agua actual <br><span class="lt">y te decimos</span> <span class="accent">exactamente</span> qué spec necesitas.</h2>
+        <h2 class="reveal">Analizamos tu agua actual y te decimos <span class="accent">exactamente</span> qué spec necesitas.</h2>
         <p class="reveal">Diagnóstico técnico sin costo. Respuesta en menos de 1 hora hábil. Si decides trabajar con INDUAGUA, primera entrega con COA validado sin costo adicional.</p>
         <div class="cta-actions reveal">
             <a href="https://wa.me/528112993935?text=Hola%2C%20quiero%20cotizar%20agua%20ultrapura%20para%20mi%20proceso" target="_blank" rel="noopener" class="btn">
                 Solicitar diagnóstico
                 <span class="arrow">→</span>
             </a>
-            <a href="/" class="underlink">Conocer INDUAGUA ↗</a>
+            <a href="/" class="link-rule">Conocer INDUAGUA <span class="arrow">↗</span></a>
         </div>
     </div>
 </section>
@@ -950,13 +945,13 @@
             </div>
         </div>
         <div class="foot-bottom">
-            <span>© 2026 · INDUAGUA · Tecnología e Ingeniería del Agua</span>
+            <span>© 2026 INDUAGUA · Tecnología e Ingeniería del Agua</span>
             <span>induagua.com</span>
         </div>
     </div>
 </footer>
 
-<a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20cotizar%20agua%20ultrapura%20industrial" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp INDUAGUA">
+<a href="https://wa.me/528112993935?text=Hola%2C%20me%20interesa%20cotizar%20agua%20ultrapura%20industrial" target="_blank" rel="noopener" class="wa" aria-label="WhatsApp INDUAGUA">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
@@ -969,7 +964,7 @@
     var io = new IntersectionObserver(function(entries){
         entries.forEach(function(e, i){
             if (e.isIntersecting) {
-                setTimeout(function(){ e.target.classList.add('in'); }, i * 80);
+                setTimeout(function(){ e.target.classList.add('in'); }, Math.min(i * 60, 240));
                 io.unobserve(e.target);
             }
         });
