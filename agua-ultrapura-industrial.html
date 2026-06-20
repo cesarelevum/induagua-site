@@ -29,7 +29,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500&display=swap" rel="stylesheet">
 
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -76,13 +76,13 @@
         *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
         :root {
-            --cream: #FAF8F3;
-            --cream-warm: #F2EEE3;
-            --carbon: #14181F;
-            --ink: #1A1F2B;
-            --gray-warm: #6B6960;
-            --gray-line: #DDD8CC;
-            --gray-soft: #B8B3A8;
+            --cream: #F4F4F1;
+            --cream-warm: #ECECE7;
+            --carbon: #0F1115;
+            --ink: #1A1D23;
+            --gray-warm: #5F6168;
+            --gray-line: #D8D8D2;
+            --gray-soft: #A8A8A2;
             --industrial: #0033A0;
             --industrial-soft: rgba(0,51,160,0.08);
             --whatsapp: #25D366;
@@ -91,20 +91,21 @@
 
         html { scroll-behavior:smooth; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--ink);
             background: var(--cream);
-            line-height: 1.6;
+            line-height: 1.55;
             font-size: 16px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            font-feature-settings: 'ss01', 'cv11';
             overflow-x: hidden;
         }
 
-        /* Display type — Fraunces variable */
-        .display, h1, h2, .h2-style { font-family: 'Fraunces', Georgia, serif; font-variation-settings: 'opsz' 144, 'SOFT' 50; }
-        .display { font-weight: 400; letter-spacing: -0.025em; line-height: 1.02; }
+        .mono { font-family: 'IBM Plex Mono', monospace; }
+
+        /* Display type — IBM Plex Sans */
+        .display, h1, h2, .h2-style { font-family: 'IBM Plex Sans', sans-serif; }
+        .display { font-weight: 500; letter-spacing: -0.022em; line-height: 1.05; }
 
         a { color: var(--ink); text-decoration: none; transition: opacity .25s ease; }
         img { max-width:100%; height:auto; display:block; }
@@ -113,10 +114,10 @@
 
         /* ============ EYEBROW ============ */
         .eyebrow {
-            font-family: 'Inter', sans-serif;
+            font-family: 'IBM Plex Mono', monospace;
             font-size: .7rem;
-            font-weight: 600;
-            letter-spacing: 0.18em;
+            font-weight: 500;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
             color: var(--gray-warm);
         }
@@ -179,16 +180,16 @@
             align-items: end;
         }
         .hero h1 {
-            font-size: clamp(3rem, 7vw, 6.25rem);
-            font-weight: 400;
-            letter-spacing: -0.038em;
-            line-height: 0.95;
+            font-size: clamp(2.75rem, 6.5vw, 5.5rem);
+            font-weight: 500;
+            letter-spacing: -0.032em;
+            line-height: 1;
             color: var(--carbon);
             margin: 0;
         }
         .hero h1 em {
-            font-style: italic;
-            font-variation-settings: 'opsz' 144, 'SOFT' 100;
+            font-style: normal;
+            font-weight: 600;
             color: var(--industrial);
         }
         .hero .meta-col {
@@ -254,14 +255,13 @@
             gap: 56px;
         }
         .stat .num {
-            font-family: 'Fraunces', serif;
-            font-size: clamp(2rem, 3.5vw, 2.875rem);
-            font-weight: 400;
-            font-variation-settings: 'opsz' 144;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 500;
             color: var(--carbon);
-            letter-spacing: -0.025em;
+            letter-spacing: -0.015em;
             line-height: 1;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
         .stat .label {
             font-size: .8125rem;
@@ -284,19 +284,20 @@
         }
         .edit-grid .side .eyebrow { margin-bottom: 16px; }
         .edit-grid .side .num-mark {
-            font-family: 'Fraunces', serif;
-            font-size: 1.5rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1rem;
+            font-weight: 500;
             color: var(--industrial);
-            margin-bottom: 8px;
-            font-variation-settings: 'opsz' 144;
+            margin-bottom: 12px;
+            letter-spacing: .02em;
         }
         .edit-grid .body h2 {
-            font-size: clamp(1.875rem, 3.6vw, 3rem);
-            font-weight: 400;
-            letter-spacing: -0.027em;
-            line-height: 1.08;
+            font-size: clamp(1.625rem, 3vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            line-height: 1.15;
             color: var(--carbon);
-            margin-bottom: 36px;
+            margin-bottom: 32px;
             max-width: 720px;
         }
         .edit-grid .body p {
@@ -324,10 +325,10 @@
             margin-bottom: 72px;
         }
         .apps-header h2 {
-            font-size: clamp(1.875rem, 3.6vw, 3rem);
-            font-weight: 400;
-            letter-spacing: -0.027em;
-            line-height: 1.08;
+            font-size: clamp(1.625rem, 3vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            line-height: 1.15;
             color: var(--carbon);
             max-width: 640px;
         }
@@ -348,19 +349,19 @@
             padding-right: 16px;
         }
         .app-row .row-num {
-            font-family: 'Fraunces', serif;
-            font-size: 1rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: .875rem;
+            font-weight: 500;
             color: var(--industrial);
-            font-variation-settings: 'opsz' 144;
+            letter-spacing: .02em;
         }
         .app-row .row-title {
-            font-family: 'Fraunces', serif;
-            font-size: clamp(1.25rem, 2vw, 1.625rem);
-            font-weight: 400;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: clamp(1.125rem, 1.8vw, 1.4375rem);
+            font-weight: 500;
             color: var(--carbon);
-            letter-spacing: -0.015em;
-            line-height: 1.15;
-            font-variation-settings: 'opsz' 144;
+            letter-spacing: -0.018em;
+            line-height: 1.2;
         }
         .app-row .row-desc {
             font-size: .9375rem;
@@ -390,10 +391,10 @@
         }
         .compare-head { max-width: 720px; margin-bottom: 56px; }
         .compare-head h2 {
-            font-size: clamp(1.875rem, 3.6vw, 3rem);
-            font-weight: 400;
-            letter-spacing: -0.027em;
-            line-height: 1.08;
+            font-size: clamp(1.625rem, 3vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            line-height: 1.15;
             color: var(--carbon);
             margin: 18px 0 24px;
         }
@@ -454,16 +455,16 @@
             margin-bottom: 56px;
         }
         .faq-head h2 {
-            font-size: clamp(1.875rem, 3.6vw, 3rem);
-            font-weight: 400;
-            letter-spacing: -0.027em;
-            line-height: 1.08;
+            font-size: clamp(1.625rem, 3vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            line-height: 1.15;
             color: var(--cream);
             margin: 18px 0 0;
         }
-        .faq-list { border-top: 1px solid rgba(250,248,243,0.15); }
+        .faq-list { border-top: 1px solid rgba(244,244,241,0.15); }
         .faq-q {
-            border-bottom: 1px solid rgba(250,248,243,0.15);
+            border-bottom: 1px solid rgba(244,244,241,0.15);
             padding: 32px 0;
             display: grid;
             grid-template-columns: 40px 1fr;
@@ -471,19 +472,19 @@
             align-items: start;
         }
         .faq-q .q-num {
-            font-family: 'Fraunces', serif;
-            color: rgba(250,248,243,0.4);
-            font-size: 1rem;
-            font-variation-settings: 'opsz' 144;
-            padding-top: 4px;
+            font-family: 'IBM Plex Mono', monospace;
+            color: rgba(244,244,241,0.4);
+            font-size: .8125rem;
+            font-weight: 500;
+            letter-spacing: .02em;
+            padding-top: 6px;
         }
         .faq-q h3 {
-            font-family: 'Fraunces', serif;
-            font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-            font-weight: 400;
-            font-variation-settings: 'opsz' 144;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: clamp(1.125rem, 1.8vw, 1.4375rem);
+            font-weight: 500;
             color: var(--cream);
-            letter-spacing: -0.015em;
+            letter-spacing: -0.018em;
             line-height: 1.25;
             margin-bottom: 14px;
         }
@@ -500,18 +501,18 @@
             text-align: center;
         }
         section.cta h2 {
-            font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-            font-weight: 400;
-            letter-spacing: -0.035em;
-            line-height: 0.98;
+            font-size: clamp(2.25rem, 5vw, 4rem);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            line-height: 1.04;
             color: var(--carbon);
             max-width: 880px;
             margin: 24px auto 28px;
         }
         section.cta h2 em {
-            font-style: italic;
+            font-style: normal;
+            font-weight: 600;
             color: var(--industrial);
-            font-variation-settings: 'opsz' 144, 'SOFT' 100;
         }
         section.cta p {
             font-size: 1.0625rem;
