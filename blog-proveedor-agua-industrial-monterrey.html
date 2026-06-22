@@ -224,5 +224,7 @@
         document.querySelectorAll('.faq-question').forEach(function(btn) { btn.addEventListener('click', function() { var item = this.parentElement; var answer = item.querySelector('.faq-answer'); var isActive = item.classList.contains('active'); document.querySelectorAll('.faq-item').forEach(function(faqItem) { faqItem.classList.remove('active'); faqItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); faqItem.querySelector('.faq-answer').style.maxHeight = null; }); if (!isActive) { item.classList.add('active'); this.setAttribute('aria-expanded', 'true'); answer.style.maxHeight = answer.scrollHeight + 'px'; } }); });
     })();
     </script>
+    <!-- Vercel Web Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
