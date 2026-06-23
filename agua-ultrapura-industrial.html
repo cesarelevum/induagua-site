@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agua Ultrapura Industrial en Monterrey y Nuevo León | INDUAGUA</title>
     <meta name="description" content="Suministro de agua ultrapura para electrónica, farmacéutica, laboratorios y formulación química crítica en Monterrey y Nuevo León. Ósmosis inversa (RO) + resinas de intercambio iónico (DI), análisis certificado lote a lote (COA).">
-    <meta name="keywords" content="agua ultrapura, agua ultrapura industrial, agua ultrapura Monterrey, agua ultrapura Nuevo León, agua ultrapura para electrónica, agua ultrapura para farmacéutica, agua ultrapura para laboratorio, agua de baja conductividad industrial, agua RO + DI, agua tipo II, agua tipo III">
+    <meta name="keywords" content="agua ultrapura, agua ultrapura industrial, agua ultrapura Monterrey, agua ultrapura Nuevo León, agua ultrapura para electrónica, agua ultrapura para farmacéutica, agua ultrapura para laboratorio, agua de baja conductividad industrial, agua RO + DI, agua ASTM D1193 Type I, agua tipo I ultrapura, agua USP 645, agua para HPLC, agua para semiconductores">
     <meta name="author" content="INDUAGUA">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://www.induagua.com/agua-ultrapura-industrial.html">
@@ -68,7 +68,7 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "¿Qué es el agua ultrapura industrial?", "acceptedAnswer": { "@type": "Answer", "text": "Agua tratada con el menor contenido posible de iones, partículas, materia orgánica y bacterias. Se produce combinando ósmosis inversa (RO) con resinas de intercambio iónico (DI), y se especifica por su conductividad eléctrica." } },
+        { "@type": "Question", "name": "¿Qué es el agua ultrapura industrial?", "acceptedAnswer": { "@type": "Answer", "text": "Agua tratada con conductividad eléctrica menor a 1 µS/cm en su grado estándar, producida con ósmosis inversa y resinas de intercambio iónico de alta capacidad. Para procesos con control bacteriano estricto (farmacéutica, semiconductores) agregamos polishing UV-254nm y filtración 0.2 µm bajo contrato. Norma de referencia: ASTM D1193 Type I." } },
         { "@type": "Question", "name": "¿En qué se diferencia el agua ultrapura de la desmineralizada y desionizada?", "acceptedAnswer": { "@type": "Answer", "text": "La desmineralizada se produce con ósmosis inversa y elimina la mayoría de minerales disueltos. La desionizada combina RO con resinas estándar. La ultrapura usa los mismos sistemas pero con resinas de alta capacidad y control estricto de calidad por lote." } },
         { "@type": "Question", "name": "¿Qué industrias necesitan agua ultrapura?", "acceptedAnswer": { "@type": "Answer", "text": "Manufactura de electrónica, laboratorios analíticos (HPLC, espectroscopía), industria farmacéutica, formulación de químicos finos, cosmética avanzada y anodizado de precisión." } },
         { "@type": "Question", "name": "¿Atienden desde 5,000 litros mensuales?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Suministro recurrente desde 5,000 L/mes en formato tote IBC con análisis certificado por cada entrega." } },
@@ -475,16 +475,14 @@
         }
         table.spec-table th:nth-child(3) { color: var(--primary); }
         table.spec-table td:first-child {
-            font-size: .6875rem;
             font-weight: 500;
-            letter-spacing: .08em;
-            text-transform: uppercase;
-            color: var(--gray-500);
-            width: 22%;
-            padding-top: 24px;
+            color: var(--navy);
+            font-size: .9375rem;
+            width: 20%;
         }
-        table.spec-table td:nth-child(2) { color: var(--gray-700); width: 36%; }
-        table.spec-table td:nth-child(3) { color: var(--navy); font-weight: 500; width: 42%; }
+        table.spec-table td:nth-child(2) { color: var(--gray-700); width: 22%; }
+        table.spec-table td:nth-child(3) { color: var(--navy); font-weight: 500; width: 18%; white-space: nowrap; }
+        table.spec-table td:nth-child(4) { color: var(--gray-600); width: 40%; font-size: .875rem; }
         @media (max-width:780px) {
             .compare { padding: 72px 0; }
             table.spec-table th, table.spec-table td { padding: 14px 10px; font-size: .8125rem; }
@@ -732,7 +730,7 @@
         </div>
         <div class="edit-grid">
             <div class="body reveal">
-                <p>El agua ultrapura se elabora combinando <strong>ósmosis inversa (RO)</strong> con <strong>resinas de intercambio iónico (DI)</strong>, eliminando iones, partículas, materia orgánica y bacterias hasta el límite de detección. Se especifica por su <strong>conductividad eléctrica</strong> — a menor conductividad, mayor pureza.</p>
+                <p>El agua ultrapura se elabora combinando <strong>ósmosis inversa (RO)</strong> con <strong>resinas de intercambio iónico (DI)</strong>, eliminando la mayoría de iones disueltos, partículas y materia orgánica. Se especifica por su <strong>conductividad eléctrica</strong> — a menor conductividad, mayor pureza. Para procesos con control bacteriano estricto (farmacéutica, semiconductores), agregamos polishing <strong>UV-254nm</strong> y filtración <strong>0.2 µm</strong> bajo contrato.</p>
                 <p>A diferencia del agua desmineralizada (sólo RO) o desionizada (RO + resinas estándar), la ultrapura se produce con resinas de alta capacidad y control estricto de calidad por lote. Es el grado de agua que necesitas cuando cualquier ión residual, partícula o trazo orgánico puede causar una falla.</p>
                 <p>En <strong>INDUAGUA</strong> producimos ultrapura en planta propia — no subcontratada — y la entregamos a fabricantes industriales de Monterrey y Nuevo León en suministro recurrente o bajo maquila a la spec específica que tu proceso requiere.</p>
             </div>
@@ -790,54 +788,63 @@
     </div>
 </section>
 
-<!-- COMPARE -->
+<!-- SPEC MENU -->
 <section class="compare">
     <div class="wrap">
         <div class="sec-head reveal">
-            <div class="num">03 — Diferencias técnicas</div>
+            <div class="num">03 — Niveles de pureza</div>
             <div class="title">
-                <h2>Tres grados de pureza. Un solo proveedor.</h2>
+                <h2>Cinco grados de agua tratada. Tu proceso elige.</h2>
             </div>
         </div>
         <div class="intro reveal">
-            <p>Producimos las tres variantes principales en la misma planta. Si no estás seguro cuál spec necesita tu proceso, analizamos tu agua actual y te recomendamos la correcta.</p>
+            <p>Producimos un rango de purezas que cubre desde alimentación de calderas hasta procesos farmacéuticos críticos. Si no estás seguro cuál spec necesita tu proceso, analizamos tu agua actual y te recomendamos el nivel correcto.</p>
         </div>
         <table class="spec-table reveal">
             <thead>
                 <tr>
-                    <th></th>
-                    <th>Desmineralizada</th>
-                    <th>Ultrapura</th>
+                    <th>Nivel</th>
+                    <th>Tecnología</th>
+                    <th>Conductividad típica</th>
+                    <th>Recomendado para</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Tecnología</td>
+                    <td>Desmineralizada</td>
                     <td>Ósmosis inversa (RO)</td>
-                    <td>RO + resinas de intercambio iónico (DI)</td>
+                    <td>&lt; 10 µS/cm</td>
+                    <td>Alimentación de calderas, torres de enfriamiento, chillers de inyección, formulación general</td>
                 </tr>
                 <tr>
-                    <td>Conductividad</td>
-                    <td>Baja</td>
-                    <td>La más baja del catálogo</td>
+                    <td>Desionizada</td>
+                    <td>RO + resinas de intercambio iónico</td>
+                    <td>&lt; 4 µS/cm</td>
+                    <td>Fabricación de anticongelante (ISO 22241), urea automotriz, detergentes, química industrial</td>
                 </tr>
                 <tr>
-                    <td>Aplicación</td>
-                    <td>Calderas, torres de enfriamiento, chillers, formulación general</td>
-                    <td>Electrónica, farmacéutica, lab analítico, química fina</td>
+                    <td>Ultrapura (estándar)</td>
+                    <td>RO + DI alta capacidad</td>
+                    <td>&lt; 1 µS/cm</td>
+                    <td>Electrónica, laboratorios analíticos, química fina, cosmética premium</td>
                 </tr>
                 <tr>
-                    <td>COA por lote</td>
-                    <td>Incluido</td>
-                    <td>Incluido + validación adicional de conductividad</td>
+                    <td>Ultrapura tipo I</td>
+                    <td>RO + DI + UV-254nm + filtro 0.2 µm</td>
+                    <td>&lt; 0.5 µS/cm</td>
+                    <td>Procesos farmacéuticos USP &lt;645&gt;, semiconductores, HPLC, validación regulada</td>
                 </tr>
                 <tr>
-                    <td>Cuándo elegirla</td>
-                    <td>Cuando necesitas agua sin sales sin requerir pureza extrema</td>
-                    <td>Cuando un ión residual define la calidad de tu producto</td>
+                    <td>A la medida</td>
+                    <td>Maquila configurada a tu spec</td>
+                    <td>La que requieras</td>
+                    <td>Bajo contrato recurrente para fabricantes con spec única que no encaja en las anteriores</td>
                 </tr>
             </tbody>
         </table>
+        <p class="reveal" style="margin-top: 28px; font-size: .8125rem; color: var(--gray-500); line-height: 1.55; max-width: 760px;">
+            Todos los niveles incluyen análisis certificado por lote (COA). Norma de referencia: ASTM D1193. Las conductividades mostradas son específicas de entrega típica; el valor exacto se valida y entrega con cada lote bajo contrato.
+        </p>
     </div>
 </section>
 
@@ -856,7 +863,7 @@
                 <div class="num">01</div>
                 <div>
                     <h3>¿Qué es el agua ultrapura industrial?</h3>
-                    <p>Agua tratada con el menor contenido posible de iones, partículas, materia orgánica y bacterias. Se produce combinando ósmosis inversa (RO) con resinas de intercambio iónico (DI) y se especifica por su conductividad eléctrica. Se usa cuando el agua entra en contacto directo con procesos críticos donde un ión residual puede causar fallas.</p>
+                    <p>Agua tratada con conductividad eléctrica menor a 1 µS/cm en su grado estándar, producida combinando ósmosis inversa (RO) con resinas de intercambio iónico (DI) de alta capacidad. Para procesos con control bacteriano estricto (farmacéutica, semiconductores) agregamos polishing UV-254nm y filtración 0.2 µm bajo contrato. Norma de referencia: ASTM D1193 Type I.</p>
                 </div>
             </div>
             <div class="faq-q reveal">
